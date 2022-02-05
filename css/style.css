@@ -28,15 +28,11 @@ nav{
     padding: 1%;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;   
-
 }
-
 
 .heroImg{
     height: 500px;
     background-repeat: no-repeat;
-
-
 }
 .content{
     margin: 0 auto;
@@ -155,8 +151,8 @@ footer h1{
 }
 
 .skillBox{
-    margin: 20px;
-    padding: 10%;
+    margin: 14px;
+    padding: 13%;
     justify-content: center;
     text-align: center;
 }
@@ -169,5 +165,19 @@ footer h1{
 .mySkills h1 {
     text-align: center;
     margin: 20px;
-    padding: 24px;
+    margin-bottom: 0px ;
+    padding: 44px;
+}
+
+.flexContainer p{
+    font-weight:lighter;
+    font-size: 17.5px;
+}
+h1{
+    font-size: 30px;
+}
+
+.workGrid{
+    display: grid;
+    
 }
