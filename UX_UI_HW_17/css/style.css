@@ -1,0 +1,146 @@
+#navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 1%;
+    width: 100%;
+  }
+  #navigation {
+    display: flex;
+    width: 70%;
+    align-items:center;
+    justify-content: flex-end;
+  }
+  #navigation p {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1%;
+    margin: 4px;
+    font-size: 20px;
+  }
+
+.logo{
+    width: 15%;
+    padding: 2%;
+    text-align: center;
+}
+nav{
+    width: 73%;
+    padding: 1%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;   
+
+}
+
+
+.heroImg{
+    height: 500px;
+    background-repeat: no-repeat;
+
+
+}
+.content{
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content img{
+    width: 35%;
+    margin-right: 40px;
+    margin-bottom: -80px;
+    align-items:center;
+    justify-items: flex-start;
+}
+.boxcontent{
+    margin-right: 300px;
+    padding: 6%;
+    align-items: center;
+    justify-items: flex-end;
+    font-size: 24px;
+} 
+footer{
+    background-color: #000000;
+    color: white;
+    text-align: justify;
+    font-family: 'Poppins','sans-serif'; 
+    margin-top: 180px; 
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+    font-weight:100;
+
+}
+
+.special-word { 
+    color: #DAB9E4; 
+    font-weight: bolder;
+    font-size: 28px;
+  } 
+
+button{
+color: white;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 40px;
+background: #DAB9E4;
+border-radius: 40px;
+font-family: 'Poppins', 'sans-serif';
+font-weight: bolder;
+font-size: 18px;
+cursor: pointer;
+margin-top: 30px;
+}
+
+body{
+    margin: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.color{
+    background-color: rgba(244, 241, 255, 0.5);
+}
+#AG{
+    width: 100px;
+    /* float: right; */
+    padding: 40px;
+    align-content: center ;
+    justify-items: flex-end;
+    display: flex;
+}
+
+.centre{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    align-items:center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.icons {
+    display: flex;
+    padding:2%;
+    width: 25%;
+    flex-direction: ROW;
+    justify-content: center;
+  }
+
+.icons img {
+    padding: 5%;
+    justify-content: center;
+    margin: 0 16px; 
+}
+
+.boxfooter{
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer h1{
+    color: #DAB9E4;
+    text-align: center;
+}
