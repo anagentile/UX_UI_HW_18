@@ -57,18 +57,6 @@ nav{
     justify-items: flex-end;
     font-size: 24px;
 } 
-footer{
-    background-color: #000000;
-    color: white;
-    text-align: justify;
-    font-family: 'Poppins','sans-serif'; 
-    margin-top: 180px; 
-    display: flex;
-    padding: 1%;
-    justify-content: center;
-    font-weight:100;
-
-}
 
 .special-word { 
     color: #DAB9E4; 
@@ -99,6 +87,20 @@ body{
 .color{
     background-color: rgba(244, 241, 255, 0.5);
 }
+
+/* Footer */
+
+footer{
+    background-color: #000000;
+    color: white;
+    text-align: justify;
+    font-family: 'Poppins','sans-serif'; 
+    margin-top: 100px; 
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+    font-weight:100;
+}
 #AG{
     width: 100px;
     /* float: right; */
@@ -111,10 +113,11 @@ body{
 .centre{
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
+    width: 100%;
     align-items:center;
     justify-content: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-left: 12%;
 }
 
 .icons {
@@ -141,6 +144,8 @@ footer h1{
     text-align: center;
 }
 
+/* My Skills */
+
 .flexContainer{
     display: flex;
     width: 20%;
@@ -161,9 +166,11 @@ footer h1{
     background-color: rgba(218, 185, 228, 0.2);
     text-align: justify;
     justify-content: center;
+
 }
 .mySkills h1 {
     text-align: center;
+    justify-content: center;
     margin: 20px;
     margin-bottom: 0px ;
     padding: 44px;
@@ -177,7 +184,189 @@ h1{
     font-size: 30px;
 }
 
+/* Tools Section */
+
+.Tools{
+    background-color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;    
+}
+.Tools h1{
+    align-content: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 44px;
+}
+.Tools img{
+    padding: 80px;
+    align-content: center;
+}
+
+/* My Work Grid */
+
+.myWork h1{
+    text-align: center;
+    margin: 24px;
+    padding: 2%;
+}
+.myWork h3{
+    font-size: 26px;
+    font-weight: bolder;
+    filter: drop-shadow( 0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.myWork p{
+    font-size: 20px;
+    font-weight:normal;
+    color: white;
+}
 .workGrid{
     display: grid;
-    
+}
+.workGrid img{
+    width:  494px;
+    height: 300px;
+    margin: 24px;
+    align-content: center;
+} 
+.workGridBlock{
+    display: grid;
+    margin: 0px 4%;
+    align-items: center;
+    grid-template-rows:70% 30%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+    "NAA NaaImage"
+    "buttonNAA NaaImage" ;
+}
+#NAA{
+    grid-area: NAA;
+    margin: 24px;
+}
+
+#buttonNAA{
+    grid-area: buttonNAA;
+    margin-top: 40px;
+}
+#NaaImage{
+    grid-area: NaaImage;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+}
+
+#NAAblock{
+    background-image: linear-gradient(to bottom,rgba(32, 75, 115, 0.60), rgba(32, 75, 115, 0.60)),
+    url("../images/NaaImg.png");
+    background-size: cover;
+    background-repeat: no-repeat    ;
+    border-radius: 60px;
+    align-content: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: white;
+    filter: drop-shadow( 0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    height: 400px;
+}
+.secondaryButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+}
+
+#NextBlock{
+    background-image: linear-gradient(to bottom,rgba(92, 40, 157, 0.60), rgba(92, 40, 157, 0.72)),
+    url("../images/NEXT.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 60px;
+    align-content: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: white;
+    filter: drop-shadow( 0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    height: 400px;
+}
+
+.workGridBlockB{
+    display: grid;
+    margin: 0px 4%;
+    align-items: center;
+    grid-template-rows:70% 30%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+    "NextTV nextImage"
+    "buttonNext nextImage" ;
+}
+#NextTV{
+    grid-area: NextTV;
+    margin: 24px;
+}
+
+#buttonNext{
+    grid-area: buttonNext;
+    margin-top: 40px;
+}
+#nextImage{
+    grid-area: nextImage;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+}
+
+#YmcaBlock{
+    background-image: linear-gradient(to bottom,rgba(240, 61, 62, 0.54), rgba(240, 61, 62, 0.6)),
+    url("../images/YMCS.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 60px;
+    align-content: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: white;
+    filter: drop-shadow( 0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    height: 400px;
+}
+
+.workGridBlockC{
+    display: grid;
+    margin: 0px 4%;
+    align-items: center;
+    grid-template-rows:70% 30%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+    "Ymca ymcaImage"
+    "buttonYMCA ymcaImage" ;
+}
+#Ymca{
+    grid-area: Ymca;
+    margin: 24px;
+}
+
+#buttonYMCA{
+    grid-area: buttonYMCA;
+    margin-top: 40px;
+}
+#ymcaImage{
+    grid-area: ymcaImage;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
 }
