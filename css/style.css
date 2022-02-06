@@ -51,7 +51,7 @@ nav{
     justify-items: flex-start;
 }
 .boxcontent{
-    margin-right: 300px;
+    margin-right: 260px;
     padding: 6%;
     align-items: center;
     justify-items: flex-end;
@@ -69,7 +69,7 @@ color: white;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 12px 40px;
+padding: 12px 38px;
 background: #DAB9E4;
 border-radius: 40px;
 font-family: 'Poppins', 'sans-serif';
@@ -230,6 +230,20 @@ h1{
     margin: 24px;
     align-content: center;
 } 
+
+.secondaryButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 40px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+}
+
 .workGridBlock{
     display: grid;
     margin: 0px 4%;
@@ -271,18 +285,6 @@ h1{
     filter: drop-shadow( 0px 4px 4px rgba(0, 0, 0, 0.25));
     display: flex;
     height: 400px;
-}
-.secondaryButton{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 40px;
-    border: 2px solid #FFFFFF;
-    box-sizing: border-box;
-    border-radius: 40px;
-    background-color: Transparent;
-    background-repeat:no-repeat;
 }
 
 #NextBlock{
@@ -370,3 +372,186 @@ h1{
     align-content: center;
     justify-content: center;
 }
+
+/*Media Queries*/
+
+
+    /* Adjustments for 1100px */
+
+    @media only screen and (max-width: 1100px){
+        #navigation{
+        display: none;
+        }
+        .content img{
+            width: 40%;
+            margin-right: 56px;
+            margin-bottom: -80px;
+            align-items:center;
+        }
+        .boxcontent{
+            margin-right: 40px;
+            padding: 4%;
+            align-items: center;
+            font-size: 20px;
+        } 
+        .special-word { 
+            font-size: 24px;
+        } 
+        button{
+        padding: 10px 25px;
+        font-size: 16px;
+        }
+        .myWork h1{
+            margin: 18px;
+            padding: 1%;
+        }
+        .myWork h3{
+            font-size: 18px;
+        }
+        .myWork p{
+            font-size: 16px;
+        }
+        .workGrid img{
+            width:  320px;
+            height: 220px;
+            margin: 20px;
+            align-content: center;
+        } 
+        .secondaryButton{
+            padding: 10px 25px;
+            font-size: 14px;
+        }       
+        .skillBox{
+            margin: 8px;
+            padding: 2%;
+            justify-content: center;
+            text-align: center;
+        }    
+        .mySkills{
+            background-color: rgba(218, 185, 228, 0.2);
+            text-align: justify;
+            justify-content: center;      
+        }      
+        .flexContainer p{
+            font-size: 14px;
+        }
+        .flexContainer h2{
+            font-size: 17px;
+        }
+        .skillBox img{
+            width:  130px;
+            height: 130px;
+            margin: 3%;
+        }
+        .Tools{
+            padding: 1%;    
+        }
+        .Tools img{
+            padding: 30px;
+            align-content: center;
+            justify-content: space-evenly;
+        }
+
+    /* Adjustments for 600px */
+
+    @media only screen and (max-width: 600px) {
+      /* #headline{
+        position: static;
+        margin: 20px;
+      }
+      #heroGrid{
+        grid-template-areas: 
+        "featuredProduct featuredProduct"
+        "secondaryProduct CTA";
+      }
+      #categoryGrid {
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "bookcases"
+        "bedroom"
+        "patio"
+        "couches"
+        "desks";
+      } */
+    
+      .heroImg{
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        /* height: 500px; */
+        /* background-repeat: no-repeat; */
+    }
+      .content img{
+        width: 80%;
+        display: flex;
+        justify-items: center;
+        margin: 0 auto;
+        align-items: flex-start;
+    }
+    .boxcontent{
+        margin-right: 40px;
+        padding: 4%;
+        align-items: flex-end;
+        font-size: 16px;
+    } 
+    .special-word { 
+        font-size: 24px;
+    } 
+    button{
+    margin-top: 100px;
+    padding: 10px 25px;
+    font-size: 16px;
+    }
+    /* .myWork h1{
+        margin: 18px;
+        padding: 1%;
+    }
+    .myWork h3{
+        font-size: 18px;
+    }
+    .myWork p{
+        font-size: 16px;
+    }
+    .workGrid img{
+        width:  320px;
+        height: 220px;
+        margin: 20px;
+        align-content: center;
+    } 
+    .secondaryButton{
+        padding: 10px 25px;
+        font-size: 14px;
+    }       
+    .skillBox{
+        margin: 8px;
+        padding: 2%;
+        justify-content: center;
+        text-align: center;
+    }    
+    .mySkills{
+        background-color: rgba(218, 185, 228, 0.2);
+        text-align: justify;
+        justify-content: center;      
+    }      
+    .flexContainer p{
+        font-size: 14px;
+    }
+    .flexContainer h2{
+        font-size: 17px;
+    }
+    .skillBox img{
+        width:  130px;
+        height: 130px;
+        margin: 3%;
+    }
+    .Tools{
+        padding: 1%;    
+    }
+    .Tools img{
+        padding: 30px;
+        align-content: center;
+        justify-content: space-evenly;
+    } */
+
+      
